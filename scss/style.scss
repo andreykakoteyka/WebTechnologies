@@ -1,0 +1,113 @@
+$headerHeight: 70px;
+$footerHeight: 20px;
+$sidebarWidth: 250px;
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  background-color: #eee;
+
+  > header {
+    width: 100%;
+    height: $headerHeight;
+    margin: 0;
+
+    > div {
+      height: $headerHeight;
+      box-sizing: border-box;
+      padding-top: calc(#{$headerHeight}/2 - 10px);
+      text-align: center;
+    }
+    > .brand {
+      width: $sidebarWidth;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+  > footer {
+    width: 100%;
+    height: $footerHeight;
+  }
+  .wrapper {
+    height: calc(100% - #{$headerHeight} - #{$footerHeight});
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    > div {
+      height: 100%;
+      display: inline-block;
+      box-sizing: border-box;
+      padding-top: 10px;
+    }
+
+    > .sidebar {
+      width: $sidebarWidth;
+
+      > ul {
+        width: 100%;
+
+        > li {
+          width: 100%;
+          display: block;
+          height: 40px;
+          box-sizing: border-box;
+          padding: 0 15px;
+          > a {
+            padding: 10px 0;
+          }
+        }
+
+        > li:hover {
+          background-color: #450876;
+        }
+      }
+
+
+
+      a {
+        text-decoration: none;
+        display: block;
+      }
+      a:visited {
+        color: inherit;
+      }
+    }
+
+    > .content {
+      width: calc(100% - #{$sidebarWidth});
+      padding: 10px;
+      position: absolute;
+    }
+  }
+}
+
+.hue-1 {
+  background-color: #140124;
+}
+.hue-2 {
+  background-color: #1C072E;
+}
+.hue-3 {
+  background-color: #450876;
+}
+.complimentary-1 {
+  background-color: #B0A900;
+}
+.hue-1,
+.hue-2,
+.hue-3,
+.complimentary-1 {
+  color: #fff;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul > li {
+  list-style: none;
+}

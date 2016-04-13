@@ -1,0 +1,23 @@
+{
+  "name": "web-technologies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "postinstall": "bower install && gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreykakoteyka/WebTechnologies.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/andreykakoteyka/WebTechnologies/issues"
+  },
+  "homepage": "https://github.com/andreykakoteyka/WebTechnologies#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0"
+  }
+}

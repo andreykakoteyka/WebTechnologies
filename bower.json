@@ -1,0 +1,19 @@
+{
+  "name": "WebTechnologies",
+  "homepage": "https://github.com/andreykakoteyka/WebTechnologies",
+  "authors": [
+    "Andrey Igoshin <aigosh@mera.ru>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
