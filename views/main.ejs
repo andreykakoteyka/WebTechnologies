@@ -1,0 +1,22 @@
+<div class="row">
+    <% items.forEach(function (item) { %>
+        <div class="col-2">
+            <div class="post-wrapper">
+                <div class="post-header hue-1"><%= item.name %></div>
+                <div class="post-content">
+                    <img src="<%= item.imgUrl %>" width="100%"/>
+                    <span><%= item.description %></span>
+                </div>
+                <span style="color: #999;"><%= item.likes %> liked</span>
+                <div class="post-actions">
+                    <% if (!item.featured ) {%>
+                        <button onclick="like(<%= item.id + ', this' %>)">Like</button>
+                    <% } else { %>
+                        <button class="featured" onclick="like(<%= item.id + ', this' %>)">Like</button>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    <% }); %>
+</div>
+<button class="up-btn hue-1">^</button>

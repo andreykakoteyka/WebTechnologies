@@ -1,27 +1,30 @@
 <html>
 <head>
-    <title>My webpage</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title><%= 'Awesome Cars | ' + title %></title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <header class="hue-1">
-        <div class="brand">Brand</div>
-        <div class="title">My header</div>
+        <div class="brand"><a href="/">Awesome Cars</a></div>
+        <div class="title"><%= title %></div>
     </header>
     <div class="wrapper">
         <div class="sidebar hue-2">
             <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link3</a></li>
-                <li><a href="#">Link 4</a></li>
-                <li><a href="#">Link 5</a></li>
-                <li><a href="#">Link 6</a></li>
+                <li><a href="/top">Top 100</a></li>
+                <li><a href="/class/A">Class A</a></li>
+                <li><a href="/class/B">Class B</a></li>
+                <li><a href="/class/C">Class C</a></li>
+                <li><a href="/class/D">Class D</a></li>
+                <li><a href="/class/E">Class E</a></li>
+                <li><a href="/class/F">Class F</a></li>
+                <li><a href="/featured">Favorite</a></li>
             </ul>
         </div><div class="content">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto aut cum debitis dicta, distinctio fugit non officia placeat porro, provident quos repellat tempora ut voluptatibus? Nam nemo sunt temporibus.</div>
+            <%- include(template) %>
+        </div>
     </div>
-    <footer class="hue-1">my footer</footer>
-<script src="../js/main.js"></script>
+<script src="/lib/jquery/dist/jquery.min.js"></script>
+<script src="/js/main.js"></script>
 </body>
 </html>
